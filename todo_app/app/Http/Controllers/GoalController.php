@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 
 use App\Goal;
+
 use Illuminate\Http\Request;
 
 class GoalController extends Controller
