@@ -4,23 +4,15 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Todo extends Model
+class Tag extends Model
 {
-    use \Rutorika\Sortable\SortableTrait;
-
     public function user()
     {
         return $this->belongsTo('App\User');
     }
 
-    public function goal()
-    {
-        return $this->belongsTo('App\Goal');
-    }
-
-    public function tags()
+    public function todos()
     {
         return $this->belongsToMany('App\Tag');
     }
 }
-
