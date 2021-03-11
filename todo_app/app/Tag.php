@@ -13,6 +13,6 @@ class Tag extends Model
 
     public function todos()
     {
-        return $this->belongsToMany('App\Tag');
+        return $this->belongsToMany('App\Todo');
     }
 }
